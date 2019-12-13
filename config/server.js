@@ -30,7 +30,6 @@ app.use(expressValidator())
 /*Configura o modulo consign - autoload*/
 consign()
     .include('app/routes')
-    .then('app/models')
     .then('app/controllers')
     .into(app)
 
