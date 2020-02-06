@@ -29,8 +29,8 @@ app.use(expressValidator())
 
 /*Configura o modulo consign - autoload*/
 consign()
-    .include('app/routes')
-    .then('app/controllers')
+    .include('./app/routes')
+    .then('./app/controllers')
     .into(app)
 
 /*Exporta o modulo express*/
